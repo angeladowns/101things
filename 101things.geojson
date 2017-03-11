@@ -272,8 +272,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "landmark",
+    "marker-color": "#58A4B0",
     "name":"Hario Wireless Towers",
     "description":"The order to attack Pearl Harbor was broadcast from there",
     "coordinates":"33.066333, 129.751368",
@@ -481,8 +481,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "museum",
+    "marker-color": "#A22522",
     "name":"JMSDF Museum",
     "description":"Look into the history of Japanese Maritime Defense",
     "coordinates":"33.173644, 129.713601",
@@ -538,8 +538,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Kannon Falls",
     "description":"It's 45 meters high and 10 meters wide",
     "coordinates":"33.435094, 130.130117",
@@ -576,8 +576,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Kiyomizu Falls",
     "description":"75-meter sheer drop and one of the 100 best falls in Japan",
     "coordinates":"33.325239, 130.214789",
@@ -614,8 +614,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "museum",
+    "marker-color": "#A22522",
     "name":"Kyushu Ceramics Museum",
     "description":"Collection of ceramic ware from the entire Kyushu region",
     "coordinates":"33.178995, 129.880794",
@@ -747,8 +747,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Mikaeri Falls",
     "description":"One of \"The Best 100 Waterfalls of Japan.\"",
     "coordinates":"33.367703, 130.038857",
@@ -956,8 +956,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "village",
+    "marker-color": "#E98A15",
     "name":"Nakaoyama",
     "description":"Small pottery town tucked away in Hasami-cho",
     "coordinates":"33.120332, 129.930701",
@@ -1089,8 +1089,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "village",
+    "marker-color": "#E98A15",
     "name":"Okawachiyama",
     "description":"\"Village of the Secret Kilns\" surrounded by mountains",
     "coordinates":"33.234631, 129.892344",
@@ -1279,8 +1279,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Ryutosen Waterfall",
     "description":"A series of waterfalls in Higashi Sonogi",
     "coordinates":"33.025505, 129.985068",
@@ -1317,8 +1317,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "rocket",
+    "marker-color": "#373F51",
     "name":"Saga Space Science Museum",
     "description":"Have fun with science through participation and experience",
     "coordinates":"33.179029, 130.035317",
@@ -1355,8 +1355,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "landmark",
+    "marker-color": "#58A4B0",
     "name":"Saikai/Shin-Saikai Bridge",
     "description":"Observe the whirlpools below the 2 bridges",
     "coordinates":"33.054914, 129.759243",
@@ -1374,8 +1374,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "beer",
+    "marker-color": "#CBA328",
     "name":"Sakagura Dori",
     "description":"Sake Brewery Avenue in Kashima",
     "coordinates":"33.092399, 130.114559",
@@ -1431,8 +1431,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Senryu Falls",
     "description":"Waterfall of the Hidden Dragon",
     "coordinates":"33.296795, 129.681142",
@@ -1583,8 +1583,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "zoo",
+    "marker-color": "#315C2B",
     "name":"Tabira Insect Park",
     "description":"Observe various insects in their natural habitat",
     "coordinates":"33.339832, 129.583182",
@@ -1697,8 +1697,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "skiing",
+    "marker-color": "#A8C256",
     "name":"Tenzan Ski Resort",
     "description":"Nearest location from Sasebo for winter sports",
     "coordinates":"33.354055, 130.147554",
@@ -1716,8 +1716,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Todoroki Falls",
     "description":"Beautiful waterfalls located in the onsen town of Ureshino",
     "coordinates":"33.089117, 129.966345",
@@ -1773,8 +1773,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Tsugane Falls",
     "description":"Located in a haunted area including a haunted tunnel",
     "coordinates":"32.914623, 129.695164",
@@ -1830,8 +1830,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "water",
+    "marker-color": "#59114D",
     "name":"Urami Falls",
     "description":"Isolated waterfall you can walk behind",
     "coordinates":"32.973147, 129.974156",
