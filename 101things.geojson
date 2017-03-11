@@ -158,7 +158,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Doctor Fish (SunSpa Omura)",
     "description":"Tiny flesh eating fish known as doctor fish at Yu No Hana Spa",
@@ -177,7 +177,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Fukui Cave",
     "description":"Ancient cave from Paleolithic and Jomon periods",
@@ -215,7 +215,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Gen' Emon Kiln",
     "description":"The potters work in a time honored fashion",
@@ -367,7 +367,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Huis Ten Bosch",
     "description":"Dutch themed park in Sasebo",
@@ -386,7 +386,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Ichigo No Mori",
     "description":"Pick fresh strawberries when in season",
@@ -690,7 +690,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Marukei Trading Company",
     "description":"Pottery making/ceramic painting in Arita",
@@ -880,7 +880,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Nagasaki Lantern Festival",
     "description":"2 week event begins on the first day of Chinese New Year",
@@ -975,7 +975,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Nanatsugama Caves",
     "description":"Cliffs sharpened by the rough waves of the Genkai Sea",
@@ -1108,7 +1108,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Omura Chou Chou",
     "description":"This place offers agricultural experiences like fruit picking",
@@ -1127,7 +1127,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Omura Go Karts",
     "description":"Some of the fastest go-carts in Kyushu",
@@ -1260,7 +1260,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Round 1 Saga",
     "description":"Bowling, karaoke, video games, UFO catchers, and more",
@@ -1298,7 +1298,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Saga Balloon Fiesta",
     "description":"Large aerial event occurs in late October/early November",
@@ -1412,7 +1412,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Scarecrow Festival",
     "description":"Annual event takes place in Hasami-cho in late September",
@@ -1450,7 +1450,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Shikisha",
     "description":"Pizza making and ceramic painting",
@@ -1887,7 +1887,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "marker",
+    "marker-symbol": "circle",
     "marker-color": "#94849B",
     "name":"Yosakoi Festival",
     "description":"Held the 3rd weekend in October every year",
