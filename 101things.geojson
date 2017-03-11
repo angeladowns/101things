@@ -310,8 +310,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Hiyamizu Dake",
     "description":"Beautiful view of northern \"99 Islands\"",
     "coordinates":"33.233446, 129.583735",
@@ -443,8 +443,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Ishidake Overlook",
     "description":"Sunset view in \"The Last Samurai\" scene filmed here",
     "coordinates":"33.154311, 129.689292",
@@ -500,8 +500,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Kagamiyama",
     "description":"Mirror Mountain offers spectacular views of Karatsu",
     "coordinates":"33.428978, 130.022515",
@@ -690,8 +690,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Marukei Trading Company",
     "description":"Pottery making/ceramic painting in Arita",
     "coordinates":"33.189617, 129.905387",
@@ -804,8 +804,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Mt. Eboshi",
     "description":"Breathtaking view of Sasebo Harbor",
     "coordinates":"33.180295, 129.755678",
@@ -823,8 +823,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Mt. Kurokami",
     "description":"518 meters above sea level with a great view",
     "coordinates":"33.213389, 129.904459",
@@ -842,8 +842,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Mt. Yumihari Observatory",
     "description":"Fantastic view of Sasebo Harbor",
     "coordinates":"33.179891, 129.701115",
@@ -1678,8 +1678,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "embassy",
+    "marker-color": "#003B36",
     "name":"Tenkaiho",
     "description":"Beautiful \"99 Islands\" overlook",
     "coordinates":"33.131359, 129.69294",
