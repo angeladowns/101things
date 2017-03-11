@@ -291,8 +291,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "castle",
+    "marker-color": "#C4BBAF",
     "name":"Hirado Castle",
     "description":"Beautiful castle overlooking the ocean",
     "coordinates":"33.368573, 129.557565",
@@ -367,8 +367,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "amusement-park",
+    "marker-color": "#94849B",
     "name":"Huis Ten Bosch",
     "description":"Dutch themed park in Sasebo",
     "coordinates":"33.085676, 129.786794",
@@ -557,8 +557,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "castle",
+    "marker-color": "#C4BBAF",
     "name":"Karatsu Castle",
     "description":"Illuminated at night and makes a gorgeous sight",
     "coordinates":"33.453543, 129.978194",
@@ -595,8 +595,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "park",
+    "marker-color": "#A7AF31",
     "name":"Kozakibana Park",
     "description":"Westernmost point of Japan's Mainland",
     "coordinates":"33.218726, 129.553408",
@@ -633,8 +633,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "campsite",
+    "marker-color": "#A5978B",
     "name":"Lake Isanoura",
     "description":"Great camping, fishing and only 1 hour from Main Base",
     "coordinates":"33.014376, 129.684146",
@@ -652,8 +652,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "campsite",
+    "marker-color": "#A5978B",
     "name":"Lake Nodake",
     "description":"Enjoy camping, cycling, pedal boating, and outdoor sports",
     "coordinates":"32.976853, 129.978449",
@@ -709,8 +709,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "park",
+    "marker-color": "#A7AF31",
     "name":"Meganeishi Park",
     "description":"\"Glasses Rock\" formed by years of erosion",
     "coordinates":"33.203124, 129.719407",
@@ -728,8 +728,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "park",
+    "marker-color": "#A7AF31",
     "name":"Mifuneyama Rakuen",
     "description":"Seasonal flowers and colors abound at this park in Takeo",
     "coordinates":"33.181202, 130.016906",
@@ -918,8 +918,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "aquarium",
+    "marker-color": "#A2D3C2",
     "name":"Nagasaki Penguin Aquarium",
     "description":"A must see for the penguin lovers",
     "coordinates":"32.758425, 129.946847",
@@ -937,8 +937,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "park",
+    "marker-color": "#A7AF31",
     "name":"Nagushiyama Park",
     "description":"100,000 Kurume azaleas and Hirado azaleas",
     "coordinates":"33.257314, 129.580324",
@@ -1146,8 +1146,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "park",
+    "marker-color": "#A7AF31",
     "name":"Omura Park",
     "description":"Various flowers blooming almost all year around",
     "coordinates":"32.897448, 129.959026",
@@ -1203,8 +1203,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "campsite",
+    "marker-color": "#A5978B",
     "name":"Osaki Camping",
     "description":"Camping along the ocean not too far from Hario",
     "coordinates":"33.051769, 129.831809",
@@ -1241,8 +1241,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "aquarium",
+    "marker-color": "#A2D3C2",
     "name":"Pearl Sea Resort",
     "description":"Aquarium, restaurants and more 10 minutes from Main Base",
     "coordinates":"33.161479, 129.680644",
@@ -1393,8 +1393,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "shop",
+    "marker-color": "#892151",
     "name":"Sasebo Morning Market",
     "description":"Asaichi, famous morning market opens at 3 a.m.",
     "coordinates":"33.16488, 129.720208",
@@ -1507,8 +1507,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "campsite",
+    "marker-color": "#A5978B",
     "name":"Shirahama Campground",
     "description":"Camping right along the ocean",
     "coordinates":"33.122845, 129.661549",
@@ -1640,8 +1640,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "beer",
+    "marker-color": "#CBA328",
     "name":"Tamaya Beer Garden",
     "description":"All you can eat and drink summers, in downtown Sasebo",
     "coordinates":"33.172154, 129.719538",
