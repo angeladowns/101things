@@ -291,7 +291,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "castle",
+    "marker-symbol": "ranger-station",
     "marker-color": "#C4BBAF",
     "name":"Hirado Castle",
     "description":"Beautiful castle overlooking the ocean",
@@ -557,7 +557,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "castle",
+    "marker-symbol": "ranger-station",
     "marker-color": "#C4BBAF",
     "name":"Karatsu Castle",
     "description":"Illuminated at night and makes a gorgeous sight",
