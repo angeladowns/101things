@@ -45,7 +45,7 @@
   },
   "properties": {
     "marker-symbol": "harbor",
-    "marker-color": "#24c0e3",
+    "marker-color": "#1B4079",
     "name":"99 Islands Cruise",
     "description":"Enjoy the seas of \"Kujukushima\" from a sightseeing ship",
     "coordinates":"33.16147, 129.680572",
@@ -64,7 +64,7 @@
   },
   "properties": {
     "marker-symbol": "shop",
-    "marker-color": "#000000",
+    "marker-color": "#892151",
     "name":"Arita Ceramics Wholesalers",
     "description":"World's largest Arita-yaki shopping mall",
     "coordinates":"33.19542, 129.876682",
@@ -83,7 +83,7 @@
   },
   "properties": {
     "marker-symbol": "shop",
-    "marker-color": "#000000",
+    "marker-color": "#892151",
     "name":"Arita Porcelain Park",
     "description":"Birth place of porcelain making in Japan",
     "coordinates":"33.16431, 129.907895",
@@ -102,7 +102,7 @@
   },
   "properties": {
     "marker-symbol": "zoo",
-    "marker-color": "#000000",
+    "marker-color": "#315C2B",
     "name":"Bio Park",
     "description":"Learn symbiotic relationship between humans and animals",
     "coordinates":"32.989731, 129.786271",
@@ -121,7 +121,7 @@
   },
   "properties": {
     "marker-symbol": "shop",
-    "marker-color": "#000000",
+    "marker-color": "#892151",
     "name":"China on the Park",
     "description":"Home of Fukagawa porcelain",
     "coordinates":"33.183024, 129.851087",
@@ -140,7 +140,7 @@
   },
   "properties": {
     "marker-symbol": "park",
-    "marker-color": "#000000",
+    "marker-color": "#A7AF31",
     "name":"Daihikan",
     "description":"Small park with large Buddha carvings on steep rocks",
     "coordinates":"33.218725, 129.62619",
@@ -197,7 +197,7 @@
   },
   "properties": {
     "marker-symbol": "restaurant",
-    "marker-color": "#000000",
+    "marker-color": "#B74621",
     "name":"Funabansho",
     "description":"Seafood as fresh as you can get",
     "coordinates":"33.086328, 129.703667",
@@ -254,7 +254,7 @@
   },
   "properties": {
     "marker-symbol": "shop",
-    "marker-color": "#000000",
+    "marker-color": "#892151",
     "name":"Gobangai",
     "description":"New Western style shopping mall in Sasebo",
     "coordinates":"33.164543, 129.7238",
@@ -672,7 +672,7 @@
   },
   "properties": {
     "marker-symbol": "restaurant",
-    "marker-color": "#000000",
+    "marker-color": "#B74621",
     "name":"Log Kit Sasebo Burger",
     "description":"Try the famous \"Sasebo Burger\"",
     "coordinates":"33.173149, 129.713121",
@@ -786,7 +786,7 @@
   },
   "properties": {
     "marker-symbol": "zoo",
-    "marker-color": "#000000",
+    "marker-color": "#315C2B",
     "name":"Mori Kirara",
     "description":"Kujukukushima Zoological and Botanical Garden",
     "coordinates":"33.151843, 129.690125",
@@ -1014,7 +1014,7 @@
   },
   "properties": {
     "marker-symbol": "restaurant",
-    "marker-color": "#000000",
+    "marker-color": "#B74621",
     "name":"Nila Kamal",
     "description":"Delicious Thai food restaurant",
     "coordinates":"33.172304, 129.730373",
@@ -1033,7 +1033,7 @@
   },
   "properties": {
     "marker-symbol": "shop",
-    "marker-color": "#000000",
+    "marker-color": "#892151",
     "name":"Noritake Factory",
     "description":"Factory outlet store for the famous porcelain",
     "coordinates":"33.279854, 129.849646",
@@ -1337,7 +1337,7 @@
   },
   "properties": {
     "marker-symbol": "shop",
-    "marker-color": "#000000",
+    "marker-color": "#892151",
     "name":"Saga YouMe Town",
     "description":"American style shopping mall in Saga City",
     "coordinates":"33.276035, 130.306301",
@@ -1565,7 +1565,7 @@
   },
   "properties": {
     "marker-symbol": "restaurant",
-    "marker-color": "#000000",
+    "marker-color": "#B74621",
     "name":"Steak Salon Asakura",
     "description":"Enjoy delicious steak Sasebo style",
     "coordinates":"33.166865, 129.7228",
@@ -1736,7 +1736,7 @@
   },
   "properties": {
     "marker-symbol": "restaurant",
-    "marker-color": "#000000",
+    "marker-color": "#B74621",
     "name":"Tonchinkan",
     "description":"Japanese \"Izakaya\", pub with food service",
     "coordinates":"33.170995, 129.723359",
@@ -1850,7 +1850,7 @@
   },
   "properties": {
     "marker-symbol": "restaurant",
-    "marker-color": "#000000",
+    "marker-color": "#B74621",
     "name":"Woody Life",
     "description":"Large variety of delicious curry dishes. Make reservations!",
     "coordinates":"33.034422, 129.74411",
