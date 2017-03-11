@@ -63,7 +63,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "shop",
     "marker-color": "#000000",
     "name":"Arita Ceramics Wholesalers",
     "description":"World's largest Arita-yaki shopping mall",
@@ -82,7 +82,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "shop",
     "marker-color": "#000000",
     "name":"Arita Porcelain Park",
     "description":"Birth place of porcelain making in Japan",
@@ -101,7 +101,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "zoo",
     "marker-color": "#000000",
     "name":"Bio Park",
     "description":"Learn symbiotic relationship between humans and animals",
@@ -120,7 +120,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "shop",
     "marker-color": "#000000",
     "name":"China on the Park",
     "description":"Home of Fukagawa porcelain",
@@ -139,7 +139,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "park",
     "marker-color": "#000000",
     "name":"Daihikan",
     "description":"Small park with large Buddha carvings on steep rocks",
@@ -196,7 +196,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "restaurant",
     "marker-color": "#000000",
     "name":"Funabansho",
     "description":"Seafood as fresh as you can get",
@@ -253,7 +253,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "shop",
     "marker-color": "#000000",
     "name":"Gobangai",
     "description":"New Western style shopping mall in Sasebo",
@@ -671,7 +671,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "restaurant",
     "marker-color": "#000000",
     "name":"Log Kit Sasebo Burger",
     "description":"Try the famous \"Sasebo Burger\"",
@@ -785,7 +785,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "zoo",
     "marker-color": "#000000",
     "name":"Mori Kirara",
     "description":"Kujukukushima Zoological and Botanical Garden",
@@ -939,7 +939,7 @@
   "properties": {
     "marker-symbol": "star",
     "marker-color": "#000000",
-    "name":"Nagushiyama park",
+    "name":"Nagushiyama Park",
     "description":"100,000 Kurume azaleas and Hirado azaleas",
     "coordinates":"33.257314, 129.580324",
     "time from base":"1 hr"
@@ -1013,7 +1013,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "restaurant",
     "marker-color": "#000000",
     "name":"Nila Kamal",
     "description":"Delicious Thai food restaurant",
@@ -1032,7 +1032,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "shop",
     "marker-color": "#000000",
     "name":"Noritake Factory",
     "description":"Factory outlet store for the famous porcelain",
@@ -1336,7 +1336,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "shop",
     "marker-color": "#000000",
     "name":"Saga YouMe Town",
     "description":"American style shopping mall in Saga City",
@@ -1564,7 +1564,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "restaurant",
     "marker-color": "#000000",
     "name":"Steak Salon Asakura",
     "description":"Enjoy delicious steak Sasebo style",
@@ -1735,7 +1735,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "restaurant",
     "marker-color": "#000000",
     "name":"Tonchinkan",
     "description":"Japanese \"Izakaya\", pub with food service",
@@ -1849,7 +1849,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
+    "marker-symbol": "restaurant",
     "marker-color": "#000000",
     "name":"Woody Life",
     "description":"Large variety of delicious curry dishes. Make reservations!",
