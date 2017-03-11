@@ -367,7 +367,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "amusement-park",
+    "marker-symbol": "attraction",
     "marker-color": "#94849B",
     "name":"Huis Ten Bosch",
     "description":"Dutch themed park in Sasebo",
@@ -880,8 +880,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "attraction",
+    "marker-color": "#94849B",
     "name":"Nagasaki Lantern Festival",
     "description":"2 week event begins on the first day of Chinese New Year",
     "coordinates":"32.741993, 129.875706",
@@ -1127,8 +1127,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "attraction",
+    "marker-color": "#94849B",
     "name":"Omura Go Karts",
     "description":"Some of the fastest go-carts in Kyushu",
     "coordinates":"32.974494, 129.980967",
@@ -1260,8 +1260,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "attraction",
+    "marker-color": "#94849B",
     "name":"Round 1 Saga",
     "description":"Bowling, karaoke, video games, UFO catchers, and more",
     "coordinates":"33.275112, 130.301343",
@@ -1298,8 +1298,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "attraction",
+    "marker-color": "#94849B",
     "name":"Saga Balloon Fiesta",
     "description":"Large aerial event occurs in late October/early November",
     "coordinates":"33.252326, 130.245581",
@@ -1412,8 +1412,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "attraction",
+    "marker-color": "#94849B",
     "name":"Scarecrow Festival",
     "description":"Annual event takes place in Hasami-cho in late September",
     "coordinates":"33.118716, 129.922145",
@@ -1792,8 +1792,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "beer",
+    "marker-color": "#CBA328",
     "name":"Umegae Sake Mill",
     "description":"Sample freshly brewed sake close to Hario",
     "coordinates":"33.089705, 129.814948",
@@ -1887,8 +1887,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "attraction",
+    "marker-color": "#94849B",
     "name":"Yosakoi Festival",
     "description":"Held the 3rd weekend in October every year",
     "coordinates":"33.169249, 129.722756",
