@@ -272,7 +272,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "landmark",
+    "marker-symbol": "star",
     "marker-color": "#58A4B0",
     "name":"Hario Wireless Towers",
     "description":"The order to attack Pearl Harbor was broadcast from there",
@@ -918,7 +918,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "aquarium",
+    "marker-symbol": "star",
     "marker-color": "#A2D3C2",
     "name":"Nagasaki Penguin Aquarium",
     "description":"A must see for the penguin lovers",
@@ -1241,7 +1241,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "aquarium",
+    "marker-symbol": "star",
     "marker-color": "#A2D3C2",
     "name":"Pearl Sea Resort",
     "description":"Aquarium, restaurants and more 10 minutes from Main Base",
@@ -1355,7 +1355,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "landmark",
+    "marker-symbol": "star",
     "marker-color": "#58A4B0",
     "name":"Saikai/Shin-Saikai Bridge",
     "description":"Observe the whirlpools below the 2 bridges",
