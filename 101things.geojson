@@ -405,8 +405,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Ikitsuki Daigyoran Kannon Statue",
     "description":"Largest bronze statue in Japan with a height of 18 meters",
     "coordinates":"33.363268, 129.431963",
@@ -766,8 +766,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "religious-christian",
+    "marker-color": "#F8333C",
     "name":"Miuramachi Catholic Church",
     "description":"Old Catholic church near Sasebo train station",
     "coordinates":"33.165804, 129.725823",
@@ -861,8 +861,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Mukyudo",
     "description":"Air raid shelter dug by elementary school students",
     "coordinates":"33.086873, 129.814175",
@@ -899,8 +899,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Nagasaki Peace Park",
     "description":"Commemorates the atomic bombing on August 9th, 1945",
     "coordinates":"32.775427, 129.863074",
@@ -994,8 +994,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "swimming",
+    "marker-color": "#009FB7",
     "name":"Neshiko Beach",
     "description":"One of the \"100 most beautiful beaches in Japan\"",
     "coordinates":"33.290844, 129.446261",
@@ -1184,8 +1184,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "swimming",
+    "marker-color": "#009FB7",
     "name":"Osaki Beach",
     "description":"Cozy beach not far from Hario housing",
     "coordinates":"33.053893, 129.827078",
@@ -1488,8 +1488,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "swimming",
+    "marker-color": "#009FB7",
     "name":"Shirahama Beach",
     "description":"Beautiful beach nearest to Main Base",
     "coordinates":"33.124002, 129.660816",
@@ -1526,8 +1526,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "swimming",
+    "marker-color": "#009FB7",
     "name":"Shirikusari Beach",
     "description":"Beautiful cove with camping, snorkeling and diving",
     "coordinates":"32.925014, 129.640378",
