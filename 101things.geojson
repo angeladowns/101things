@@ -367,7 +367,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Huis Ten Bosch",
     "description":"Dutch themed park in Sasebo",
@@ -880,7 +880,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Nagasaki Lantern Festival",
     "description":"2 week event begins on the first day of Chinese New Year",
@@ -1127,7 +1127,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Omura Go Karts",
     "description":"Some of the fastest go-carts in Kyushu",
@@ -1260,7 +1260,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Round 1 Saga",
     "description":"Bowling, karaoke, video games, UFO catchers, and more",
@@ -1298,7 +1298,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Saga Balloon Fiesta",
     "description":"Large aerial event occurs in late October/early November",
@@ -1412,7 +1412,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Scarecrow Festival",
     "description":"Annual event takes place in Hasami-cho in late September",
@@ -1887,7 +1887,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "attraction",
+    "marker-symbol": "marker",
     "marker-color": "#94849B",
     "name":"Yosakoi Festival",
     "description":"Held the 3rd weekend in October every year",
