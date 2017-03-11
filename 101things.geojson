@@ -519,8 +519,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "buddhism",
+    "marker-color": "#FCAB10",
     "name":"Kameyama Hachiman Shrine",
     "description":"Founded in 1264 for the Emperor Ohjin and Empress Jingu",
     "coordinates":"33.181846, 129.717185",
@@ -1070,8 +1070,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "buddhism",
+    "marker-color": "#FCAB10",
     "name":"Ohashi Kannon Temple",
     "description":"Located in a beautiful forest near Sasebo",
     "coordinates":"33.272556, 129.701419",
@@ -1754,8 +1754,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "buddhism",
+    "marker-color": "#FCAB10",
     "name":"Touzan Shrine",
     "description":"Shrine dedicated to Ri Sanpei, the father of Arita porcelain",
     "coordinates":"33.189134, 129.898929",
@@ -1868,8 +1868,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "buddhism",
+    "marker-color": "#FCAB10",
     "name":"Yabusame at Kurokami Shrine",
     "description":"Japanese horseback archery annually on October 29th",
     "coordinates":"33.2093, 129.92722",
@@ -1925,8 +1925,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "buddhism",
+    "marker-color": "#FCAB10",
     "name":"Yutoku Inari Shrine",
     "description":"One of the largest Inari-jinja in all of Japan",
     "coordinates":"33.073574, 130.108198",
