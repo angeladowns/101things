@@ -11,7 +11,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "home",
+    "marker-symbol": "star",
     "marker-color": "#000000",
     "name": "Fleet Activities Sasebo",
     "coordinates": "33.1681097, 129.7136578"
@@ -27,7 +27,7 @@
     ]
   },
   "properties": {
-    "marker-symbol": "home",
+    "marker-symbol": "star",
     "marker-color": "#000000",
     "name": "Hario Village Housing",
     "coordinates": "33.085072, 129.778998"
