@@ -158,8 +158,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Doctor Fish (SunSpa Omura)",
     "description":"Tiny flesh eating fish known as doctor fish at Yu No Hana Spa",
     "coordinates":"32.921267, 129.937762",
@@ -177,8 +177,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Fukui Cave",
     "description":"Ancient cave from Paleolithic and Jomon periods",
     "coordinates":"33.292447, 129.69698",
@@ -215,8 +215,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Gen' Emon Kiln",
     "description":"The potters work in a time honored fashion",
     "coordinates":"33.196461, 129.877602",
@@ -329,8 +329,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Hizen Yumekaido",
     "description":"The atmosphere of the Edo Period recreated",
     "coordinates":"33.095882, 129.991514",
@@ -386,8 +386,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Ichigo No Mori",
     "description":"Pick fresh strawberries when in season",
     "coordinates":"32.994073, 129.751869",
@@ -462,8 +462,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Izumiyama Quarry",
     "description":"Kaolin, the raw material for porcelain was mined here",
     "coordinates":"33.194514, 129.909703",
@@ -975,8 +975,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Nanatsugama Caves",
     "description":"Cliffs sharpened by the rough waves of the Genkai Sea",
     "coordinates":"33.549581, 129.928286",
@@ -1108,8 +1108,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Omura Chou Chou",
     "description":"This place offers agricultural experiences like fruit picking",
     "coordinates":"32.96634, 129.95689",
@@ -1223,7 +1223,7 @@
   },
   "properties": {
     "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-color": "#D991BA",
     "name":"Paradise Garden",
     "description":"Private onsens right here in Sasebo",
     "coordinates":"33.11972, 129.796378",
@@ -1450,8 +1450,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "marker",
+    "marker-color": "#94849B",
     "name":"Shikisha",
     "description":"Pizza making and ceramic painting",
     "coordinates":"33.120431, 129.93048",
@@ -1470,7 +1470,7 @@
   },
   "properties": {
     "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-color": "#D991BA",
     "name":"Shiosai No Yu",
     "description":"Both public and private onsen not far from Hario",
     "coordinates":"33.055494, 129.823951",
@@ -1603,7 +1603,7 @@
   },
   "properties": {
     "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-color": "#D991BA",
     "name":"Takeo Hot Spring",
     "description":"Hot springs feature spring water with soft texture",
     "coordinates":"33.194954, 130.015646",
@@ -1660,7 +1660,7 @@
   },
   "properties": {
     "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-color": "#D991BA",
     "name":"Tea Cup Onsen",
     "description":"Enjoy a private onsen in a tea cup shaped bath",
     "coordinates":"33.095553, 129.983718",
@@ -1811,8 +1811,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Uragashira Repatriation Park",
     "description":"1.4 million Japanese returned from overseas after WWII",
     "coordinates":"33.100354, 129.757811",
@@ -1906,8 +1906,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "monument",
+    "marker-color": "#DE3C4B",
     "name":"Yoshinogari Historical Park",
     "description":"Experience life In the ancient Yayoi period of Japan's history",
     "coordinates":"33.323508, 130.391048",
