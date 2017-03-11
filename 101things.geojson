@@ -234,8 +234,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "garden",
+    "marker-color": "#7C238C",
     "name":"Glover Garden",
     "description":"Stunning view of Nagasaki Harbor",
     "coordinates":"32.733353, 129.869406",
@@ -348,8 +348,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "lodging",
+    "marker-color": "#000022",
     "name":"Hotel Lorelei",
     "description":"Located close to Hario with private onsens",
     "coordinates":"33.092869, 129.796662",
@@ -1051,8 +1051,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "lighthouse",
+    "marker-color": "#E28413",
     "name":"Obae Hana Lighthouse",
     "description":"Located at the northern tip of Ikitsuki Island",
     "coordinates":"33.439785, 129.430266",
@@ -1165,8 +1165,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "lodging",
+    "marker-color": "#000022",
     "name":"Orange Bay Hotel",
     "description":"Privet onsen in each room and stunning sunset views",
     "coordinates":"32.726103, 130.204725",
@@ -1545,8 +1545,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "dam",
+    "marker-color": "#F2DC5D",
     "name":"Soto Dam",
     "description":"31 American POWs lost their lives building this dam",
     "coordinates":"33.217726, 129.780048",
@@ -1621,8 +1621,8 @@
     ]
   },
   "properties": {
-    "marker-symbol": "star",
-    "marker-color": "#000000",
+    "marker-symbol": "library",
+    "marker-color": "#DCFFFD",
     "name":"Takeo Library",
     "description":"Library, Starbucks and Tsutaya bookstore all in one",
     "coordinates":"33.189303, 130.023648",
