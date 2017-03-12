@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>101 Things To Do Around Sasebo</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.33.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='locator.css' rel='stylesheet' />
+  </head>
+  <body>
+
+    <div class='sidebar'>
+      <div class='heading'>
+        <h1>101 Things To Do Around Sasebo</h1>
+      </div>
+      <div id='listings' class='listings'></div>
+    </div>
+
+
+    <div id='map' class='map'> </div>
+
+    <script>
+
+    // This will let you use the .remove() function later on
+if (!('remove' in Element.prototype)) {
+  Element.prototype.remove = function() {
+    if (this.parentNode) {
+      this.parentNode.removeChild(this);
+    }
+  };
+}
+
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYW5nZWxhZG93bnMiLCJhIjoiY2l6MXlyNWplMDVnNTMycDhwYzQxY3kyaiJ9.PR6Dnx3yPFhjx02zWXfRzw';
+      // This adds the map to your page
+      var map = new mapboxgl.Map({
+      // container id specified in the HTML
+      container: 'map',
+      // style URL
+      style: 'mapbox://styles/angeladowns/cj06bgil700562snt42wfu0pc',
+      // initial position in [long, lat] format
+      center: [129.7136578, 33.1681097],
+      // initial zoom
+      zoom: 10
+    });
+
+
+    var stores = {
+      /* data from sweetgreen.geojson, downloaded above */
+
+      "type": "FeatureCollection",
+      "features": [
+        {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.7136578,
+          33.1681097
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#000000",
+        "name": "Fleet Activities Sasebo",
+        "description":"Reference point",
+        "coordinates": "33.1681097, 129.7136578",
+        "time from base":"0 mins"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.778998,
+          33.085072
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#000000",
+        "name": "Hario Village Housing",
+        "description":"Reference point",
+        "coordinates": "33.085072, 129.778998",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.680572,
+          33.16147
+        ]
+      },
+      "properties": {
+        "marker-symbol": "harbor",
+        "marker-color": "#1B4079",
+        "name":"99 Islands Cruise",
+        "description":"Enjoy the seas of \"Kujukushima\" from a sightseeing ship",
+        "coordinates":"33.16147, 129.680572",
+        "time from base":"10 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.876682,
+          33.19542
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"Arita Ceramics Wholesalers",
+        "description":"World's largest Arita-yaki shopping mall",
+        "coordinates":"33.19542, 129.876682",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.907895,
+          33.16431
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"Arita Porcelain Park",
+        "description":"Birth place of porcelain making in Japan",
+        "coordinates":"33.16431, 129.907895",
+        "time from base":"45 min"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.786271,
+          32.989731
+        ]
+      },
+      "properties": {
+        "marker-symbol": "zoo",
+        "marker-color": "#315C2B",
+        "name":"Bio Park",
+        "description":"Learn symbiotic relationship between humans and animals",
+        "coordinates":"32.989731, 129.786271",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.851087,
+          33.183024
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"China on the Park",
+        "description":"Home of Fukagawa porcelain",
+        "coordinates":"33.183024, 129.851087",
+        "time from base":"45 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.62619,
+          33.218725
+        ]
+      },
+      "properties": {
+        "marker-symbol": "park",
+        "marker-color": "#A7AF31",
+        "name":"Daihikan",
+        "description":"Small park with large Buddha carvings on steep rocks",
+        "coordinates":"33.218725, 129.62619",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.937762,
+          32.921267
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Doctor Fish (SunSpa Omura)",
+        "description":"Tiny flesh eating fish known as doctor fish at Yu No Hana Spa",
+        "coordinates":"32.921267, 129.937762",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.69698,
+          33.292447
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Fukui Cave",
+        "description":"Ancient cave from Paleolithic and Jomon periods",
+        "coordinates":"33.292447, 129.69698",
+        "time from base":"45 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.703667,
+          33.086328
+        ]
+      },
+      "properties": {
+        "marker-symbol": "restaurant",
+        "marker-color": "#B74621",
+        "name":"Funabansho",
+        "description":"Seafood as fresh as you can get",
+        "coordinates":"33.086328, 129.703667",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.877602,
+          33.196461
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Gen' Emon Kiln",
+        "description":"The potters work in a time honored fashion",
+        "coordinates":"33.196461, 129.877602",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.869406,
+          32.733353
+        ]
+      },
+      "properties": {
+        "marker-symbol": "garden",
+        "marker-color": "#7C238C",
+        "name":"Glover Garden",
+        "description":"Stunning view of Nagasaki Harbor",
+        "coordinates":"32.733353, 129.869406",
+        "time from base":"1.75 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.7238,
+          33.164543
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"Gobangai",
+        "description":"New Western style shopping mall in Sasebo",
+        "coordinates":"33.164543, 129.7238",
+        "time from base":"5 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.751368,
+          33.066333
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#58A4B0",
+        "name":"Hario Wireless Towers",
+        "description":"The order to attack Pearl Harbor was broadcast from there",
+        "coordinates":"33.066333, 129.751368",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.557565,
+          33.368573
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#C4BBAF",
+        "name":"Hirado Castle",
+        "description":"Beautiful castle overlooking the ocean",
+        "coordinates":"33.368573, 129.557565",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.583735,
+          33.233446
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Hiyamizu Dake",
+        "description":"Beautiful view of northern \"99 Islands\"",
+        "coordinates":"33.233446, 129.583735",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.991514,
+          33.095882
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Hizen Yumekaido",
+        "description":"The atmosphere of the Edo Period recreated",
+        "coordinates":"33.095882, 129.991514",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.796662,
+          33.092869
+        ]
+      },
+      "properties": {
+        "marker-symbol": "lodging",
+        "marker-color": "#000022",
+        "name":"Hotel Lorelei",
+        "description":"Located close to Hario with private onsens",
+        "coordinates":"33.092869, 129.796662",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.786794,
+          33.085676
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Huis Ten Bosch",
+        "description":"Dutch themed park in Sasebo",
+        "coordinates":"33.085676, 129.786794",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.751869,
+          32.994073
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Ichigo No Mori",
+        "description":"Pick fresh strawberries when in season",
+        "coordinates":"32.994073, 129.751869",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.431963,
+          33.363268
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Ikitsuki Daigyoran Kannon Statue",
+        "description":"Largest bronze statue in Japan with a height of 18 meters",
+        "coordinates":"33.363268, 129.431963",
+        "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.433182,
+          33.356142
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "94849B",
+        "name":"Ikitsuki Island",
+        "description":"Sheer cliffs and great hiking trails",
+        "coordinates":"33.356142, 129.433182",
+        "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.689292,
+          33.154311
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Ishidake Overlook",
+        "description":"Sunset view in \"The Last Samurai\" scene filmed here",
+        "coordinates":"33.154311, 129.689292",
+        "time from base":"15 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.909703,
+          33.194514
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Izumiyama Quarry",
+        "description":"Kaolin, the raw material for porcelain was mined here",
+        "coordinates":"33.194514, 129.909703",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.713601,
+          33.173644
+        ]
+      },
+      "properties": {
+        "marker-symbol": "museum",
+        "marker-color": "#A22522",
+        "name":"JMSDF Museum",
+        "description":"Look into the history of Japanese Maritime Defense",
+        "coordinates":"33.173644, 129.713601",
+        "time from base":"5 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.022515,
+          33.428978
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Kagamiyama",
+        "description":"Mirror Mountain offers spectacular views of Karatsu",
+        "coordinates":"33.428978, 130.022515",
+        "time from base":"2 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.717185,
+          33.181846
+        ]
+      },
+      "properties": {
+        "marker-symbol": "town-hall",
+        "marker-color": "#FCAB10",
+        "name":"Kameyama Hachiman Shrine",
+        "description":"Founded in 1264 for the Emperor Ohjin and Empress Jingu",
+        "coordinates":"33.181846, 129.717185",
+        "time from base":"10 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.130117,
+          33.435094
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Kannon Falls",
+        "description":"It's 45 meters high and 10 meters wide",
+        "coordinates":"33.435094, 130.130117",
+        "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.978194,
+          33.453543
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#C4BBAF",
+        "name":"Karatsu Castle",
+        "description":"Illuminated at night and makes a gorgeous sight",
+        "coordinates":"33.453543, 129.978194",
+        "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.214789,
+          33.325239
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Kiyomizu Falls",
+        "description":"75-meter sheer drop and one of the 100 best falls in Japan",
+        "coordinates":"33.325239, 130.214789",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.553408,
+          33.218726
+        ]
+      },
+      "properties": {
+        "marker-symbol": "park",
+        "marker-color": "#A7AF31",
+        "name":"Kozakibana Park",
+        "description":"Westernmost point of Japan's Mainland",
+        "coordinates":"33.218726, 129.553408",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.880794,
+          33.178995
+        ]
+      },
+      "properties": {
+        "marker-symbol": "museum",
+        "marker-color": "#A22522",
+        "name":"Kyushu Ceramics Museum",
+        "description":"Collection of ceramic ware from the entire Kyushu region",
+        "coordinates":"33.178995, 129.880794",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.684146,
+          33.014376
+        ]
+      },
+      "properties": {
+        "marker-symbol": "campsite",
+        "marker-color": "#A5978B",
+        "name":"Lake Isanoura",
+        "description":"Great camping, fishing and only 1 hour from Main Base",
+        "coordinates":"33.014376, 129.684146",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.978449,
+          32.976853
+        ]
+      },
+      "properties": {
+        "marker-symbol": "campsite",
+        "marker-color": "#A5978B",
+        "name":"Lake Nodake",
+        "description":"Enjoy camping, cycling, pedal boating, and outdoor sports",
+        "coordinates":"32.976853, 129.978449",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.713121,
+          33.173149
+        ]
+      },
+      "properties": {
+        "marker-symbol": "restaurant",
+        "marker-color": "#B74621",
+        "name":"Log Kit Sasebo Burger",
+        "description":"Try the famous \"Sasebo Burger\"",
+        "coordinates":"33.173149, 129.713121",
+        "time from base":"5 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.905387,
+          33.189617
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Marukei Trading Company",
+        "description":"Pottery making/ceramic painting in Arita",
+        "coordinates":"33.189617, 129.905387",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.719407,
+          33.203124
+        ]
+      },
+      "properties": {
+        "marker-symbol": "park",
+        "marker-color": "#A7AF31",
+        "name":"Meganeishi Park",
+        "description":"\"Glasses Rock\" formed by years of erosion",
+        "coordinates":"33.203124, 129.719407",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.016906,
+          33.181202
+        ]
+      },
+      "properties": {
+        "marker-symbol": "park",
+        "marker-color": "#A7AF31",
+        "name":"Mifuneyama Rakuen",
+        "description":"Seasonal flowers and colors abound at this park in Takeo",
+        "coordinates":"33.181202, 130.016906",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.038857,
+          33.367703
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Mikaeri Falls",
+        "description":"One of \"The Best 100 Waterfalls of Japan.\"",
+        "coordinates":"33.367703, 130.038857",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.725823,
+          33.165804
+        ]
+      },
+      "properties": {
+        "marker-symbol": "religious-christian",
+        "marker-color": "#F8333C",
+        "name":"Miuramachi Catholic Church",
+        "description":"Old Catholic church near Sasebo train station",
+        "coordinates":"33.165804, 129.725823",
+        "time from base":"10 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.690125,
+          33.151843
+        ]
+      },
+      "properties": {
+        "marker-symbol": "zoo",
+        "marker-color": "#315C2B",
+        "name":"Mori Kirara",
+        "description":"Kujukukushima Zoological and Botanical Garden",
+        "coordinates":"33.151843, 129.690125",
+        "time from base":"15 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.755678,
+          33.180295
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Mt. Eboshi",
+        "description":"Breathtaking view of Sasebo Harbor",
+        "coordinates":"33.180295, 129.755678",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.904459,
+          33.213389
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Mt. Kurokami",
+        "description":"518 meters above sea level with a great view",
+        "coordinates":"33.213389, 129.904459",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.701115,
+          33.179891
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Mt. Yumihari Observatory",
+        "description":"Fantastic view of Sasebo Harbor",
+        "coordinates":"33.179891, 129.701115",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.814175,
+          33.086873
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Mukyudo",
+        "description":"Air raid shelter dug by elementary school students",
+        "coordinates":"33.086873, 129.814175",
+        "time from base":"35 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.875706,
+          32.741993
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Nagasaki Lantern Festival",
+        "description":"2 week event begins on the first day of Chinese New Year",
+        "coordinates":"32.741993, 129.875706",
+        "time from base":"1.75 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.863074,
+          32.775427
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Nagasaki Peace Park",
+        "description":"Commemorates the atomic bombing on August 9th, 1945",
+        "coordinates":"32.775427, 129.863074",
+        "time from base":"1.75 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.946847,
+          32.758425
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#A2D3C2",
+        "name":"Nagasaki Penguin Aquarium",
+        "description":"A must see for the penguin lovers",
+        "coordinates":"32.758425, 129.946847",
+        "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.580324,
+          33.257314
+        ]
+      },
+      "properties": {
+        "marker-symbol": "park",
+        "marker-color": "#A7AF31",
+        "name":"Nagushiyama Park",
+        "description":"100,000 Kurume azaleas and Hirado azaleas",
+        "coordinates":"33.257314, 129.580324",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.930701,
+          33.120332
+        ]
+      },
+      "properties": {
+        "marker-symbol": "village",
+        "marker-color": "#E98A15",
+        "name":"Nakaoyama",
+        "description":"Small pottery town tucked away in Hasami-cho",
+        "coordinates":"33.120332, 129.930701",
+        "time from base":"45 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.928286,
+          33.549581
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Nanatsugama Caves",
+        "description":"Cliffs sharpened by the rough waves of the Genkai Sea",
+        "coordinates":"33.549581, 129.928286",
+        "time from base":"1.75 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.446261,
+          33.290844
+        ]
+      },
+      "properties": {
+        "marker-symbol": "swimming",
+        "marker-color": "#009FB7",
+        "name":"Neshiko Beach",
+        "description":"One of the \"100 most beautiful beaches in Japan\"",
+        "coordinates":"33.290844, 129.446261",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.730373,
+          33.172304
+        ]
+      },
+      "properties": {
+        "marker-symbol": "restaurant",
+        "marker-color": "#B74621",
+        "name":"Nila Kamal",
+        "description":"Delicious Thai food restaurant",
+        "coordinates":"33.172304, 129.730373",
+        "time from base":"15 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.849646,
+          33.279854
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"Noritake Factory",
+        "description":"Factory outlet store for the famous porcelain",
+        "coordinates":"33.279854, 129.849646",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.430266,
+          33.439785
+        ]
+      },
+      "properties": {
+        "marker-symbol": "lighthouse",
+        "marker-color": "#E28413",
+        "name":"Obae Hana Lighthouse",
+        "description":"Located at the northern tip of Ikitsuki Island",
+        "coordinates":"33.439785, 129.430266",
+       "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.701419,
+          33.272556
+        ]
+      },
+      "properties": {
+        "marker-symbol": "town-hall",
+        "marker-color": "#FCAB10",
+        "name":"Ohashi Kannon Temple",
+        "description":"Located in a beautiful forest near Sasebo",
+        "coordinates":"33.272556, 129.701419",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.892344,
+          33.234631
+        ]
+      },
+      "properties": {
+        "marker-symbol": "village",
+        "marker-color": "#E98A15",
+        "name":"Okawachiyama",
+        "description":"\"Village of the Secret Kilns\" surrounded by mountains",
+        "coordinates":"33.234631, 129.892344",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.95689,
+          32.96634
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Omura Chou Chou",
+        "description":"This place offers agricultural experiences like fruit picking",
+        "coordinates":"32.96634, 129.95689",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.980967,
+          32.974494
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Omura Go Karts",
+        "description":"Some of the fastest go-carts in Kyushu",
+        "coordinates":"32.974494, 129.980967",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.959026,
+          32.897448
+        ]
+      },
+      "properties": {
+        "marker-symbol": "park",
+        "marker-color": "#A7AF31",
+        "name":"Omura Park",
+        "description":"Various flowers blooming almost all year around",
+        "coordinates":"32.897448, 129.959026",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.204725,
+          32.726103
+        ]
+      },
+      "properties": {
+        "marker-symbol": "lodging",
+        "marker-color": "#000022",
+        "name":"Orange Bay Hotel",
+        "description":"Private onsen in each room and stunning sunset views",
+        "coordinates":"32.726103, 130.204725",
+        "time from base":"2.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.827078,
+          33.053893
+        ]
+      },
+      "properties": {
+        "marker-symbol": "swimming",
+        "marker-color": "#009FB7",
+        "name":"Osaki Beach",
+        "description":"Cozy beach not far from Hario housing",
+        "coordinates":"33.053893, 129.827078",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.831809,
+          33.051769
+        ]
+      },
+      "properties": {
+        "marker-symbol": "campsite",
+        "marker-color": "#A5978B",
+        "name":"Osaki Camping",
+        "description":"Camping along the ocean not too far from Hario",
+        "coordinates":"33.051769, 129.831809",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.796378,
+          33.11972
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#D991BA",
+        "name":"Paradise Garden",
+        "description":"Private onsens right here in Sasebo",
+        "coordinates":"33.11972, 129.796378",
+        "time from base":"20 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.680644,
+          33.161479
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#A2D3C2",
+        "name":"Pearl Sea Resort",
+        "description":"Aquarium, restaurants and more 10 minutes from Main Base",
+        "coordinates":"33.161479, 129.680644",
+        "time from base":"10 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.301343,
+          33.275112
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Round 1 Saga",
+        "description":"Bowling, karaoke, video games, UFO catchers, and more",
+        "coordinates":"33.275112, 130.301343",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.985068,
+          33.025505
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Ryutosen Waterfall",
+        "description":"A series of waterfalls in Higashi Sonogi",
+        "coordinates":"33.025505, 129.985068",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.245581,
+          33.252326
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Saga Balloon Fiesta",
+        "description":"Large aerial event occurs in late October/early November",
+        "coordinates":"33.252326, 130.245581",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.035317,
+          33.179029
+        ]
+      },
+      "properties": {
+        "marker-symbol": "rocket",
+        "marker-color": "#373F51",
+        "name":"Saga Space Science Museum",
+        "description":"Have fun with science through participation and experience",
+        "coordinates":"33.179029, 130.035317",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.306301,
+          33.276035
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"Saga YouMe Town",
+        "description":"American style shopping mall in Saga City",
+        "coordinates":"33.276035, 130.306301",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.759243,
+          33.054914
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#58A4B0",
+        "name":"Saikai/Shin-Saikai Bridge",
+        "description":"Observe the whirlpools below the 2 bridges",
+        "coordinates":"33.054914, 129.759243",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.114559,
+          33.092399
+        ]
+      },
+      "properties": {
+        "marker-symbol": "beer",
+        "marker-color": "#CBA328",
+        "name":"Sakagura Dori",
+        "description":"Sake Brewery Avenue in Kashima",
+        "coordinates":"33.092399, 130.114559",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.720208,
+          33.16488
+        ]
+      },
+      "properties": {
+        "marker-symbol": "shop",
+        "marker-color": "#892151",
+        "name":"Sasebo Morning Market",
+        "description":"Asaichi, famous morning market opens at 3 a.m.",
+        "coordinates":"33.16488, 129.720208",
+        "time from base":"5 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.922145,
+          33.118716
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Scarecrow Festival",
+        "description":"Annual event takes place in Hasami-cho in late September",
+        "coordinates":"33.118716, 129.922145",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.681142,
+          33.296795
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Senryu Falls",
+        "description":"Waterfall of the Hidden Dragon",
+        "coordinates":"33.296795, 129.681142",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.93048,
+          33.120431
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Shikisha",
+        "description":"Pizza making and ceramic painting",
+        "coordinates":"33.120431, 129.93048",
+        "time from base":"50 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.823951,
+          33.055494
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#D991BA",
+        "name":"Shiosai No Yu",
+        "description":"Both public and private onsen not far from Hario",
+        "coordinates":"33.055494, 129.823951",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.660816,
+          33.124002
+        ]
+      },
+      "properties": {
+        "marker-symbol": "swimming",
+        "marker-color": "#009FB7",
+        "name":"Shirahama Beach",
+        "description":"Beautiful beach nearest to Main Base",
+        "coordinates":"33.124002, 129.660816",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.661549,
+          33.122845
+        ]
+      },
+      "properties": {
+        "marker-symbol": "campsite",
+        "marker-color": "#A5978B",
+        "name":"Shirahama Campground",
+        "description":"Camping right along the ocean",
+        "coordinates":"33.122845, 129.661549",
+        "time from base":"30 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.640378,
+          32.925014
+        ]
+      },
+      "properties": {
+        "marker-symbol": "swimming",
+        "marker-color": "#009FB7",
+        "name":"Shirikusari Beach",
+        "description":"Beautiful cove with camping, snorkeling and diving",
+        "coordinates":"32.925014, 129.640378",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.780048,
+          33.217726
+        ]
+      },
+      "properties": {
+        "marker-symbol": "dam",
+        "marker-color": "#F2DC5D",
+        "name":"Soto Dam",
+        "description":"31 American POWs lost their lives building this dam",
+        "coordinates":"33.217726, 129.780048",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.7228,
+          33.166865
+        ]
+      },
+      "properties": {
+        "marker-symbol": "restaurant",
+        "marker-color": "#B74621",
+        "name":"Steak Salon Asakura",
+        "description":"Enjoy delicious steak Sasebo style",
+        "coordinates":"33.166865, 129.7228",
+        "time from base":"10 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.583182,
+          33.339832
+        ]
+      },
+      "properties": {
+        "marker-symbol": "zoo",
+        "marker-color": "#315C2B",
+        "name":"Tabira Insect Park",
+        "description":"Observe various insects in their natural habitat",
+        "coordinates":"33.339832, 129.583182",
+        "time from base":"45 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.015646,
+          33.194954
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#D991BA",
+        "name":"Takeo Hot Spring",
+        "description":"Hot springs feature spring water with soft texture",
+        "coordinates":"33.194954, 130.015646",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.023648,
+          33.189303
+        ]
+      },
+      "properties": {
+        "marker-symbol": "library",
+        "marker-color": "#DCFFFD",
+        "name":"Takeo Library",
+        "description":"Library, Starbucks and Tsutaya bookstore all in one",
+        "coordinates":"33.189303, 130.023648",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.719538,
+          33.172154
+        ]
+      },
+      "properties": {
+        "marker-symbol": "beer",
+        "marker-color": "#CBA328",
+        "name":"Tamaya Beer Garden",
+        "description":"All you can eat and drink summers, in downtown Sasebo",
+        "coordinates":"33.172154, 129.719538",
+        "time from base":"5 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.983718,
+          33.095553
+        ]
+      },
+      "properties": {
+        "marker-symbol": "star",
+        "marker-color": "#D991BA",
+        "name":"Tea Cup Onsen",
+        "description":"Enjoy a private onsen in a tea cup shaped bath",
+        "coordinates":"33.095553, 129.983718",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.69294,
+          33.131359
+        ]
+      },
+      "properties": {
+        "marker-symbol": "embassy",
+        "marker-color": "#003B36",
+        "name":"Tenkaiho",
+        "description":"Beautiful \"99 Islands\" overlook",
+        "coordinates":"33.131359, 129.69294",
+        "time from base":"25 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.147554,
+          33.354055
+        ]
+      },
+      "properties": {
+        "marker-symbol": "skiing",
+        "marker-color": "#A8C256",
+        "name":"Tenzan Ski Resort",
+        "description":"Nearest location from Sasebo for winter sports",
+        "coordinates":"33.354055, 130.147554",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.966345,
+          33.089117
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Todoroki Falls",
+        "description":"Beautiful waterfalls located in the onsen town of Ureshino",
+        "coordinates":"33.089117, 129.966345",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.723359,
+          33.170995
+        ]
+      },
+      "properties": {
+        "marker-symbol": "restaurant",
+        "marker-color": "#B74621",
+        "name":"Tonchinkan",
+        "description":"Japanese \"Izakaya\", pub with food service",
+        "coordinates":"33.170995, 129.723359",
+        "time from base":"10 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.898929,
+          33.189134
+        ]
+      },
+      "properties": {
+        "marker-symbol": "town-hall",
+        "marker-color": "#FCAB10",
+        "name":"Touzan Shrine",
+        "description":"Shrine dedicated to Ri Sanpei, the father of Arita porcelain",
+        "coordinates":"33.189134, 129.898929",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.695164,
+          32.914623
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Tsugane Falls",
+        "description":"Located in a haunted area including a haunted tunnel",
+        "coordinates":"32.914623, 129.695164",
+        "time from base":"1.5 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.814948,
+          33.089705
+        ]
+      },
+      "properties": {
+        "marker-symbol": "beer",
+        "marker-color": "#CBA328",
+        "name":"Umegae Sake Mill",
+        "description":"Sample freshly brewed sake close to Hario",
+        "coordinates":"33.089705, 129.814948",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.757811,
+          33.100354
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Uragashira Repatriation Park",
+        "description":"1.4 million Japanese returned from overseas after WWII",
+        "coordinates":"33.100354, 129.757811",
+        "time from base":"40 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.974156,
+          32.973147
+        ]
+      },
+      "properties": {
+        "marker-symbol": "water",
+        "marker-color": "#59114D",
+        "name":"Urami Falls",
+        "description":"Isolated waterfall you can walk behind",
+        "coordinates":"32.973147, 129.974156",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.74411,
+          33.034422
+        ]
+      },
+      "properties": {
+        "marker-symbol": "restaurant",
+        "marker-color": "#B74621",
+        "name":"Woody Life",
+        "description":"Large variety of delicious curry dishes. Make reservations!",
+        "coordinates":"33.034422, 129.74411",
+        "time from base":"45 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.92722,
+          33.2093
+        ]
+      },
+      "properties": {
+        "marker-symbol": "town-hall",
+        "marker-color": "#FCAB10",
+        "name":"Yabusame at Kurokami Shrine",
+        "description":"Japanese horseback archery annually on October 29th",
+        "coordinates":"33.2093, 129.92722",
+        "time from base":"1 hr"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.722756,
+          33.169249
+        ]
+      },
+      "properties": {
+        "marker-symbol": "circle",
+        "marker-color": "#94849B",
+        "name":"Yosakoi Festival",
+        "description":"Held the 3rd weekend in October every year",
+        "coordinates":"33.169249, 129.722756",
+        "time from base":"5 mins"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.391048,
+          33.323508
+        ]
+      },
+      "properties": {
+        "marker-symbol": "monument",
+        "marker-color": "#DE3C4B",
+        "name":"Yoshinogari Historical Park",
+        "description":"Experience life In the ancient Yayoi period of Japan's history",
+        "coordinates":"33.323508, 130.391048",
+        "time from base":"1.25 hrs"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.108198,
+          33.073574
+        ]
+      },
+      "properties": {
+        "marker-symbol": "town-hall",
+        "marker-color": "#FCAB10",
+        "name":"Yutoku Inari Shrine",
+        "description":"One of the largest Inari-jinja in all of Japan",
+        "coordinates":"33.073574, 130.108198",
+        "time from base":"1.25 hrs"
+      }
+    }]
+    };
+
+// This adds the data to the map
+      map.on('load', function(e) {
+      // Add the data to your map as a layer
+      map.addLayer({
+        id: 'locations',
+        type: 'symbol',
+        location: "101things.geojson",
+        // Add a GeoJSON source containing place coordinates and information.
+        source: {
+          type: 'geojson',
+          data: stores
+        },
+        layout: {
+          'icon-image': 'star-15',
+          'icon-allow-overlap': true,
+        }
+    });
+    // Initialize the list
+    buildLocationList(stores);
+   });
+
+  function flyToStore(currentFeature) {
+    map.flyTo({
+      center: currentFeature.geometry.coordinates,
+      zoom: 15
+    });
+  }
+
+  function createPopUp(currentFeature) {
+    var popUps = document.getElementsByClassName('mapboxgl-popup');
+    // Check if there is already a popup on the map and if so, remove it
+    if (popUps[0]) popUps[0].remove();
+
+    var popup = new mapboxgl.Popup({ closeOnClick: false })
+      .setLngLat(currentFeature.geometry.coordinates)
+      .setHTML('<h3>' + currentFeature.properties.name + '</h3>' +
+        '<h4>' + currentFeature.properties.description + '</h4>' +
+          '<h4> GPS Coordinates: <br /> ' + currentFeature.properties.coordinates + '</h4>' +
+            '<h4> Time From Base: <br />' + currentFeature.properties[ 'time from base' ] + '</h4>')
+      .addTo(map);
+  }
+
+  function buildLocationList(data) {
+  // Iterate through the list of stores
+  for (i = 0; i < data.features.length; i++) {
+    var currentFeature = data.features[i];
+    // Shorten data.feature.properties to just `prop` so we're not
+    // writing this long form over and over again.
+    var prop = currentFeature.properties;
+    // Select the listing container in the HTML and append a div
+    // with the class 'item' for each store
+    var listings = document.getElementById('listings');
+    var listing = listings.appendChild(document.createElement('div'));
+    listing.className = 'item';
+    listing.id = 'listing-' + i;
+
+    // Create a new link with the class 'title' for each store
+    // and fill it with the store address
+    var link = listing.appendChild(document.createElement('a'));
+    link.href = '#';
+    link.className = 'title';
+    link.dataPosition = i;
+    link.innerHTML = prop.name;
+
+    // Create a new div with the class 'details' for each store
+    // and fill it with the city and phone number
+    var details = listing.appendChild(document.createElement('div'));
+    details.innerHTML = prop.coordinates;
+    details.innerHTML += ' &middot; ' + prop[ 'time from base' ];
+
+
+    link.addEventListener('click', function(e){
+          // Update the currentFeature to the store associated with the clicked link
+          var clickedListing = data.features[this.dataPosition];
+
+          // 1. Fly to the point
+          flyToStore(clickedListing);
+
+          // 2. Close all other popups and display popup for clicked store
+          createPopUp(clickedListing);
+
+          // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+          var activeItem = document.getElementsByClassName('active');
+
+          if (activeItem[0]) {
+             activeItem[0].classList.remove('active');
+          }
+          this.parentNode.classList.add('active');
+        });
+
+        // Add an event listener for when a user clicks on the map
+map.on('click', function(e) {
+  // Query all the rendered points in the view
+  var features = map.queryRenderedFeatures(e.point, { layers: ['locations'] });
+  if (features.length) {
+    var clickedPoint = features[0];
+    // 1. Fly to the point
+    flyToStore(clickedPoint);
+    // 2. Close all other popups and display popup for clicked store
+    createPopUp(clickedPoint);
+    // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+    var activeItem = document.getElementsByClassName('active');
+    if (activeItem[0]) {
+      activeItem[0].classList.remove('active');
+    }
+    // Find the index of the store.features that corresponds to the clickedPoint that fired the event listener
+    var selectedFeature = clickedPoint.properties.address;
+
+    for (var i = 0; i < stores.features.length; i++) {
+      if (stores.features[i].properties.address === selectedFeature) {
+        selectedFeatureIndex = i;
+      }
+    }
+    // Select the correct list item using the found index and add the active class
+    var listing = document.getElementById('listing-' + selectedFeatureIndex);
+    listing.classList.add('active');
+  }
+});
+      }
+    }
+
+
+
+
+    </script>
+
+  </body>
+</html>
